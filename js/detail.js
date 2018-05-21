@@ -33,6 +33,7 @@ $(function () {
     $(".swiper-container").hover(function () {
         $(".img-brand-switch").toggle();
     });
+
     let swiper = new Swiper('.swiper-container', {
         slidesPerView: 5,
         spaceBetween: 8,

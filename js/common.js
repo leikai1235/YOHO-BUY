@@ -1,3 +1,7 @@
+// require(["jquery","lazyload"],function ($,lazyload) {
+//
+// });
+
 $(function () {
     //图片懒加载插件
     $("img.lazy").lazyload({
