@@ -4760,14 +4760,12 @@
     </div>
 </div>
 
+<script src="../lib/require.js"></script>
 
-<script src="../lib/jquery.js"></script>
-<script src="../lib/lazyload.js"></script>
 <script>
-    $(function () {
-        $("img.lazy").lazyload({effect: "fadeIn", threshold: 180});
-    });
-
+    require(["../lib/config-page"], function () {
+        require(["../lib/product.js", "../lib/common.js"]);
+    })
 </script>
 
 </body>

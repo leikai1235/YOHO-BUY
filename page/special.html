@@ -2618,12 +2618,19 @@
 </div>
 
 
-<script src="../lib/jquery.js"></script>
-<script src="../lib/lazyload.js"></script>
-<script src="../lib/jquery.pagination.js"></script>
-<script src="../js/common.js"></script>
-<script src="../js/product.js"></script>
+<!--<script src="../lib/jquery.js"></script>-->
+<!--<script src="../lib/lazyload.js"></script>-->
+<!--<script src="../lib/jquery.pagination.js"></script>-->
+<!--<script src="../js/common.js"></script>-->
+<!--<script src="../js/product.js"></script>-->
 
+<script src="../lib/require.js"></script>
+
+<script>
+    require(["../lib/config-page"], function () {
+        require(["../lib/product.js", "../lib/common.js"]);
+    })
+</script>
 
 </body>
 </html>

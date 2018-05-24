@@ -515,10 +515,16 @@
         </div>
     </div>
 </div>
-<script src="../lib/jquery.js"></script>
-<script src="../lib/lazyload.js"></script>
-<script src="../js/common.js"></script>
-<script src="../js/login.js"></script>
+<!--<script src="../lib/jquery.js"></script>-->
+<!--<script src="../lib/lazyload.js"></script>-->
+<!--<script src="../lib/common.js"></script>-->
+<!--<script src="../lib/login.js"></script>-->
+<script src="../lib/require.js"></script>
 
+<script>
+    require(["../lib/config-page"], function () {
+        require(["../lib/login.js", "../lib/common.js"]);
+    })
+</script>
 </body>
 </html>

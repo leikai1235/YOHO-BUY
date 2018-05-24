@@ -410,9 +410,15 @@
         </div>
     </div>
 </div>
-<script src="../lib/jquery.js"></script>
-<script src="../lib/lazyload.js"></script>
-<script src="../js/common.js"></script>
-<script src="../js/reginster.js"></script>
+<!--<script src="../lib/jquery.js"></script>-->
+<!--<script src="../lib/lazyload.js"></script>-->
+<!--<script src="../lib/common.js"></script>-->
+<!--<script src="../lib/reginster.js"></script>-->
+<script src="../lib/require.js"></script>
+<script>
+    require(["../lib/config-page"], function () {
+        require(["../lib/reginster.js", "../lib/common.js"]);
+    })
+</script>
 </body>
 </html>
