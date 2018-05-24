@@ -3670,3 +3670,7 @@ img {
     font-size: 16px;
     line-height: 45px
 }
+
+.go-cart .iconfont{
+    transition: 1s ease all;
+}

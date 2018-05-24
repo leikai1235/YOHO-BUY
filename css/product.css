@@ -2061,7 +2061,7 @@
 }
 
 .product-detail-page .main .chose-color li.focus {
-    border-color: #000
+    border:1px solid #000;
 }
 
 .product-detail-page .main .chose-color li.disable {
@@ -8774,4 +8774,16 @@
 
 .min-screen .new-sale-page .filter-box .brand .attr-content, .min-screen .product-list-page .filter-box .brand .attr-content {
     max-width: 570px
+}
+
+
+
+.pager span.active{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: #3a3a3a;
+    color: #fff;
 }
