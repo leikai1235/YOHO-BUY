@@ -90,7 +90,7 @@
                 </div>
                 <div class="cart-title">
                     <p class="left" style="width:6%;">
-                        <i class="cart-item-check-title cart-item-check iconfont"></i>&nbsp;&nbsp;全选
+                        <i class="cart-item-check-title cart-item-check cart-item-checked iconfont"></i>&nbsp;&nbsp;全选
                     </p>
                     <p style="width:35%">商品信息</p>
                     <p style="width:14%">单价</p>
@@ -109,7 +109,7 @@
                     <div class="cart-fixed-wrap">
                         <div class="center-content clearfix">
                             <div class="fixed-option">
-                                <i class="cart-item-check iconfont" id="cbSelAllGoods"></i>
+                                <i class="cart-item-check cart-item-checked iconfont" id="cbSelAllGoods"></i>
                                 <span class="check-all-sum">全选</span>
                                 <a class="delAll delete-all-sel" href="javascript:void(0);">删除选中商品</a>
                                 <a class="removeAll remove-all-2fav" href="javascript:void(0);">移入收藏夹</a>
@@ -391,9 +391,16 @@
 </div>
 
 
-<script src="../lib/jquery.js"></script>
-<script src="../lib/lazyload.js"></script>
-<script src="../lib/common.js"></script>
-<script src="../lib/cart.js"></script>
+<!--<script src="../lib/jquery.js"></script>-->
+<!--<script src="../lib/lazyload.js"></script>-->
+<!--<script src="../lib/common.js"></script>-->
+<!--<script src="../lib/cart.js"></script>-->
+<script src="../lib/require.js"></script>
+
+<script>
+    require(["../lib/config-page"], function () {
+        require([ "../lib/common.js","../lib/cart.js"]);
+    })
+</script>
 </body>
 </html>
